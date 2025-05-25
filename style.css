@@ -1,0 +1,241 @@
+body {
+    font-family: 'Montserrat', 'メイリオ', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #212331 70%, #232a34 100%);
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: #15161e;
+    color: #fff;
+    padding: 2.2em 1em 1.3em 1em;
+    box-shadow: 0 8px 24px 0 rgba(24,18,36,0.08);
+    border-bottom: 1.5px solid #297c9c;
+  }
+  
+  header h1 {
+    margin: 0 0 0.5em 0;      /* h1の下余白を少しだけ */
+  font-size: 2.3em;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.16);
+  text-align: center;
+}
+  
+header p {
+    margin: 0.4em auto 0 auto;           /* 左右中央寄せ */
+    font-size: 1.15em;
+    color: #aef2ff;
+    background: #1d2230;
+    display: block;                      /* インラインブロック→ブロック化で中央寄せ */
+    padding: 0.5em 2.4em;
+    border-radius: 1.6em;
+    box-shadow: 0 2px 12px rgba(20,180,255,0.05);
+    text-align: center;
+    max-width: 670px;                    /* 横幅を制限 */
+  }
+  
+  .hero img {
+    width: 92%;
+    max-width: 640px;
+    margin: 2.7em auto 1.3em auto;
+    display: block;
+    border-radius: 2em;
+    box-shadow: 0 8px 38px 0 rgba(70,200,250,0.13), 0 0px 0px 6px #43f3dd19;
+    border: 3px solid #43f3dd44;
+    background: #212331;
+  }
+  
+  main {
+    max-width: 850px;
+    margin: -2em auto 0 auto;
+    background: transparent;
+    padding: 0;
+  }
+  
+  section {
+    background: #fff;
+    border-radius: 1.6em;
+    box-shadow: 0 2px 18px rgba(40,120,130,0.06);
+    margin: 2.2em 0;
+    padding: 2.3em 2em 2em 2em;
+    position: relative;
+  }
+  
+  section.hero {
+    background: none;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #18b6ad;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 0 0 1.3em 0;
+    border-left: 7px solid #44d6c2;
+    padding-left: 0.7em;
+    letter-spacing: 0.03em;
+    background: linear-gradient(90deg, #c2f3f1 30%, #fff 80%);
+    border-radius: 0.5em;
+    box-shadow: 0 1px 12px #dafcf7a8;
+  }
+  
+  ul, dl {
+    margin: 1em 0 2.3em 1.2em;
+    padding: 0;
+  }
+  
+  ul li, dl dd {
+    background: #f3fcfc;
+    border-radius: 0.6em;
+    margin-bottom: 0.9em;
+    padding: 0.85em 1em 0.8em 1.2em;
+    color: #18555c;
+    border-left: 4px solid #43d6c2;
+    font-size: 1.07em;
+    box-shadow: 0 1px 7px #18b6ad17;
+  }
+  
+  dl dt {
+    color: #17aee3;
+    font-weight: bold;
+    margin-top: 1.12em;
+    margin-bottom: 0.24em;
+    font-size: 1.11em;
+  }
+  
+  section img {
+    width: 80%;
+    max-width: 360px;
+    display: block;
+    margin: 1em auto;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px #43d6c220;
+    border: 1.5px solid #43f3dd35;
+    background: #fff;
+  }
+  
+  a {
+    color: #179ba8;
+    text-decoration: underline;
+    transition: color 0.16s;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    color: #2357ff;
+    text-decoration: underline;
+  }
+  
+  section a.button {
+    display: inline-block;
+    background: linear-gradient(120deg, #3dd6e6 80%, #29a7a0 100%);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8em 2.2em;
+    border-radius: 2em;
+    margin: 1.3em 0 0.9em 0;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 13px #3dd6e640;
+    transition: background 0.16s, color 0.16s;
+  }
+  section a.button:hover {
+    background: #179ba8;
+    color: #fff;
+    opacity: 0.93;
+  }
+  
+  footer {
+    text-align: center;
+    color: #5da1c2;
+    font-size: 1em;
+    margin: 2.7em 0 1.3em 0;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    background: transparent;
+  }
+  
+  @media (max-width: 700px) {
+    main {
+      padding: 0 0.2em;
+    }
+    header {
+      padding: 1.3em 0.6em 0.9em 0.6em;
+    }
+    header h1 {
+      font-size: 1.25em;
+    }
+    h2 {
+      font-size: 1em;
+      padding-left: 0.5em;
+    }
+    section {
+      padding: 1em 0.5em 1em 0.5em;
+      border-radius: 0.9em;
+      margin: 1.2em 0;
+    }
+    .hero img, section img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0.7em;
+    }
+  }
+
+  .menu-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0 0 1.3em 0;
+  }
+  
+  .menu-images img {
+    width: 440px;         /* ←好みで調整、380〜480pxくらいがおすすめ */
+    max-width: 92vw;      /* 画面の幅が狭い時は自動で縮小 */
+    height: auto;
+    display: block;
+    border-radius: 1.1em;
+    box-shadow: 0 3px 16px rgba(50,50,50,0.14);
+    border: 2px solid #43d6c240;
+    background: #fff;
+    margin: 0 auto;
+  }
+  @media (max-width: 700px) {
+    .menu-images img {
+      width: 98vw;         /* スマホではほぼ全幅で見やすく */
+      max-width: 100vw;
+      border-radius: 0.7em;
+    }
+  }
+  .menu-images img {
+    width: 95%;
+    max-width: 720px;
+    height: auto;
+    display: block;
+    border-radius: 1.1em;
+    box-shadow: 0 3px 16px rgba(50,50,50,0.14);
+    border: 2px solid #43d6c240;
+    background: #fff;
+    margin: 0 auto;
+  }
+
+  .hero a img {
+    transition: 
+      filter 0.26s cubic-bezier(0.45,0.2,0.4,1), 
+      transform 0.23s cubic-bezier(0.42,0,0.58,1),
+      box-shadow 0.23s;
+  }
+  
+  .hero a:hover img,
+  .hero a:focus img {
+    filter: brightness(1.13) saturate(1.13);
+    transform: scale(1.035);
+    box-shadow: 0 6px 32px rgba(60,190,255,0.17), 0 1.5px 20px rgba(36,26,44,0.12);
+    cursor: pointer;
+  }
