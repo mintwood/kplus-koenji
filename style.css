@@ -239,20 +239,3 @@ header p {
     box-shadow: 0 6px 32px rgba(60,190,255,0.17), 0 1.5px 20px rgba(36,26,44,0.12);
     cursor: pointer;
   }
-.pdf-button {
-  display: inline-block;
-  padding: 0.8em 1.8em;
-  background: #ffd78c;
-  color: #222;
-  border-radius: 2em;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 2px 16px rgba(200,150,80,0.10);
-  margin-top: 1.2em;
-  transition: background 0.18s, color 0.18s;
-}
-.pdf-button:hover {
-  background: #e6b55c;
-  color: #38334f;
-  opacity: 0.96;
-}
