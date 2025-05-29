@@ -264,3 +264,18 @@ dl dd {
     margin-bottom: 1em;
   }
 }
+header h1 {
+  font-size: 2.8rem;  /* PC用。好みで調整OK */
+  text-align: center;
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;  /* スマホ用。1.0〜1.5remくらいで好みに調整 */
+    padding: 0.8em 0.2em;
+    line-height: 1.22;
+  }
+}
