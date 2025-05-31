@@ -279,3 +279,107 @@ header h1 {
     line-height: 1.22;
   }
 }
+/* ================================ */
+/* ヘッダー・フッター共通：アイコン＋リンクを中央寄せ */
+/* ================================ */
+.sns-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;      /* 要素間のスペース */
+  margin: 16px 0; /* 上下の余白 */
+}
+
+/* ================================ */
+/* サイバーパンク風アイコン用クラス */
+/* ================================ */
+.cyber-icons .sns-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00e5ff;
+  border-radius: 50%;
+  padding: 6px;
+  background: rgba(10, 10, 10, 0.6);
+  box-shadow:
+    0 0 8px #0ff,
+    0 0 16px #f50057,
+    inset 0 0 6px #0ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* アイコン画像そのもののサイズを統一 */
+.cyber-icons .sns-icon img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 0 4px #0ff) drop-shadow(0 0 6px #f50057);
+}
+
+/* hover時にさらに強いネオン風発光エフェクト */
+.cyber-icons .sns-icon:hover {
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow:
+    0 0 16px #0ff,
+    0 0 24px #f50057,
+    inset 0 0 8px #f50057;
+  background: rgba(20, 0, 40, 0.8);
+}
+
+/* Instagram アイコン固有のホバーカラー */
+.cyber-icons .sns-icon.ig:hover img {
+  filter:
+    brightness(0) saturate(100%)
+    invert(37%) sepia(88%)
+    saturate(693%) hue-rotate(315deg)
+    brightness(93%) contrast(101%);
+}
+
+/* X アイコン固有のホバーカラー */
+.cyber-icons .sns-icon.x:hover img {
+  filter:
+    brightness(0) saturate(100%)
+    invert(60%) sepia(39%)
+    saturate(2054%) hue-rotate(166deg)
+    brightness(95%) contrast(96%);
+}
+
+/* 英語リンク（English ➤）にサイバーパンク風のテキストエフェクト */
+.cyber-icons .link-en {
+  font-size: 1rem;
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow:
+    0 0 4px #0ff,
+    0 0 8px #f50057;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+.cyber-icons .link-en:hover {
+  color: #f50057;
+  text-shadow:
+    0 0 8px #f50057,
+    0 0 12px #00e5ff;
+}
+
+/* ================================ */
+/* レスポンシブ対応：画面幅が狭いとき */
+/* ================================ */
+@media (max-width: 600px) {
+  .sns-center {
+    gap: 16px;
+    margin: 12px 0;
+  }
+  .cyber-icons .sns-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .cyber-icons .link-en {
+    font-size: 0.9rem;
+  }
+}
+/* 例：style.css に以下を追記しておく */
+.sns-center { /* 中央揃えのフレックス設定 */ }
+.cyber-icons .sns-icon { /* ネオン風ボーダー＋シャドウ */ }
+.cyber-icons .sns-icon img { /* アイコン自体のサイズ＋ドロップシャドウ */ }
+.cyber-icons .link-ja { /* 日本語リンクのネオン風文字シャドウ */}
+/* …および hover 時の filter/color 調整など… */
